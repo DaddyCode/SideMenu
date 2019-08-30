@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QV6-tg-dtW">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Log In-->
+        <scene sceneID="xAV-FN-lqV">
+            <objects>
+                <viewController storyboardIdentifier="LogIn" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mKB-ao-vez" customClass="LogIn" customModule="PawanKumar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xMC-di-OWB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiU-MZ-iUQ">
+                                <rect key="frame" x="167.5" y="427" width="79" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="LOG IN"/>
+                                <connections>
+                                    <action selector="btnLogIN:" destination="mKB-ao-vez" eventType="touchUpInside" id="cMM-Ai-WSK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aiU-MZ-iUQ" firstAttribute="centerX" secondItem="xMC-di-OWB" secondAttribute="centerX" id="sZd-CC-oo0"/>
+                            <constraint firstItem="aiU-MZ-iUQ" firstAttribute="centerY" secondItem="xMC-di-OWB" secondAttribute="centerY" id="v6f-Zf-SGt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Nb-ii-weU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oiv-iM-7QI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V8f-xy-3Kw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-277" y="119"/>
+        </scene>
+        <!--Home Navigation-->
+        <scene sceneID="OBR-kR-E3r">
+            <objects>
+                <navigationController storyboardIdentifier="HomeNavigation" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="gDx-sS-Op3" customClass="HomeNavigation" customModule="PawanKumar" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YaE-QZ-r8b">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vTb-cI-JPR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7i3-ey-JFz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="696" y="119"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="Home" customModule="PawanKumar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99553078409999995" green="0.99452573060000005" blue="0.16955223680000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LhS-jY-LmL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1574" y="119"/>
+        </scene>
+        <!--Log Out-->
+        <scene sceneID="2VR-qk-SLs">
+            <objects>
+                <viewController storyboardIdentifier="LogOut" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Rqg-rT-Qb8" customClass="LogOut" customModule="PawanKumar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rue-db-cyR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="To5-hW-ak9">
+                                <rect key="frame" x="153.5" y="427" width="107" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="LOG OUT"/>
+                                <connections>
+                                    <action selector="btnLogOut:" destination="Rqg-rT-Qb8" eventType="touchUpInside" id="WfF-vU-rEB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6up-50-c2P">
+                                <rect key="frame" x="30" y="74" width="54" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="btnBack:" destination="led-yt-hmx" eventType="touchUpInside" id="tM5-xv-2sO"/>
+                                    <action selector="btnback:" destination="Rqg-rT-Qb8" eventType="touchUpInside" id="rlF-Fy-66s"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6up-50-c2P" firstAttribute="leading" secondItem="s7D-cy-UWj" secondAttribute="leading" constant="30" id="9kO-7g-3px"/>
+                            <constraint firstItem="To5-hW-ak9" firstAttribute="centerY" secondItem="Rue-db-cyR" secondAttribute="centerY" id="I0c-9I-jXj"/>
+                            <constraint firstItem="To5-hW-ak9" firstAttribute="centerX" secondItem="Rue-db-cyR" secondAttribute="centerX" id="Tnw-rX-ry2"/>
+                            <constraint firstItem="6up-50-c2P" firstAttribute="top" secondItem="s7D-cy-UWj" secondAttribute="top" constant="30" id="sAs-LE-cq2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="s7D-cy-UWj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LKb-3T-anO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3170" y="-337"/>
+        </scene>
+        <!--Log In Navigation-->
+        <scene sceneID="cpA-7e-Tt0">
+            <objects>
+                <navigationController storyboardIdentifier="LogInNavigation" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="QV6-tg-dtW" customClass="LogInNavigation" customModule="PawanKumar" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QoY-kR-XTq">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mKB-ao-vez" kind="relationship" relationship="rootViewController" id="wf3-zf-cYG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BTi-Xl-sja" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1107" y="119"/>
+        </scene>
+        <!--Side Menu Navigation Controller-->
+        <scene sceneID="x7N-nd-Rz5">
+            <objects>
+                <navigationController storyboardIdentifier="RightMenuNavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="4aE-AB-i9p" customClass="UISideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="neR-R0-L5K">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="NDt-zQ-fqs" kind="relationship" relationship="rootViewController" id="6HH-Bk-iI8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oTP-mN-kHH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="701" y="-613"/>
+        </scene>
+        <!--Right Side Menu Controller-->
+        <scene sceneID="utC-D9-k4r">
+            <objects>
+                <viewController storyboardIdentifier="RightSideMenuController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NDt-zQ-fqs" customClass="RightSideMenuController" customModule="PawanKumar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mjC-ns-JG7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbj-R8-rG9">
+                                <rect key="frame" x="149" y="427" width="116" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Navigation"/>
+                                <connections>
+                                    <action selector="btnNavigation:" destination="NDt-zQ-fqs" eventType="touchUpInside" id="hgL-br-YOL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRG-7S-oEL">
+                                <rect key="frame" x="30" y="74" width="54" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="btnBack:" destination="NDt-zQ-fqs" eventType="touchUpInside" id="pG2-ph-UgC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nbj-R8-rG9" firstAttribute="centerX" secondItem="mjC-ns-JG7" secondAttribute="centerX" id="4Qw-zN-M2A"/>
+                            <constraint firstItem="eRG-7S-oEL" firstAttribute="top" secondItem="Wk1-3X-e1I" secondAttribute="top" constant="30" id="88H-bu-SDh"/>
+                            <constraint firstItem="nbj-R8-rG9" firstAttribute="centerY" secondItem="mjC-ns-JG7" secondAttribute="centerY" id="fdd-Wm-T78"/>
+                            <constraint firstItem="eRG-7S-oEL" firstAttribute="leading" secondItem="Wk1-3X-e1I" secondAttribute="leading" constant="30" id="mfm-KJ-G3J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wk1-3X-e1I"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jxe-Cr-fGx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ePk-5D-tuZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1574" y="-613"/>
+        </scene>
+        <!--Side Menu Navigation Controller-->
+        <scene sceneID="9yH-uv-C1m">
+            <objects>
+                <navigationController storyboardIdentifier="LeftMenuNavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="43w-QF-ZPk" customClass="UISideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PhB-H2-X4g">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="led-yt-hmx" kind="relationship" relationship="rootViewController" id="Ckl-gc-0jx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Hl-ls-0q3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="697" y="-1284"/>
+        </scene>
+        <!--Left Side Menu Controller-->
+        <scene sceneID="0oG-IQ-P2X">
+            <objects>
+                <viewController storyboardIdentifier="LeftSideMenuController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="led-yt-hmx" customClass="LeftSideMenuController" customModule="PawanKumar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MiI-5l-1NI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kb-jc-Bns">
+                                <rect key="frame" x="149" y="427" width="116" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Navigation"/>
+                                <connections>
+                                    <action selector="btnnavigation:" destination="led-yt-hmx" eventType="touchUpInside" id="JD2-vX-xhM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DyB-ke-kHF">
+                                <rect key="frame" x="30" y="74" width="54" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="btnBack:" destination="led-yt-hmx" eventType="touchUpInside" id="zhK-3G-ABb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7kb-jc-Bns" firstAttribute="centerY" secondItem="MiI-5l-1NI" secondAttribute="centerY" id="7GU-AU-c67"/>
+                            <constraint firstItem="7kb-jc-Bns" firstAttribute="centerX" secondItem="MiI-5l-1NI" secondAttribute="centerX" id="AYb-dR-r9I"/>
+                            <constraint firstItem="DyB-ke-kHF" firstAttribute="top" secondItem="62T-Vu-JIp" secondAttribute="top" constant="30" id="bGR-0o-Wy7"/>
+                            <constraint firstItem="DyB-ke-kHF" firstAttribute="leading" secondItem="62T-Vu-JIp" secondAttribute="leading" constant="30" id="rl2-Ti-dwH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="62T-Vu-JIp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DzF-ub-D1g"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HMV-bn-Fch" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1574" y="-1284"/>
+        </scene>
+    </scenes>
+</document>
